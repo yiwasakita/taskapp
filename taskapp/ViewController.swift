@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }()
     
     // A list to store tasks from the DB
-    var taskArray = try! Realm().objects(Task).sorted("date", ascending: false)
+    var taskArray = try! Realm().objects(Task).sorted("date", ascending: false) // Changing the modifier from 'let' to 'var'
     
     override func viewDidLoad() {
         super.viewDidLoad()
